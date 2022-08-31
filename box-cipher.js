@@ -2,7 +2,7 @@ const wiredPairs = {
     'a': 11,
     'b': 21,
     'c': 31,
-    'd': 41
+    'd': 41,
     'e': 51,
     'f': 12,
     'g': 22,
@@ -26,3 +26,13 @@ const wiredPairs = {
     'y': 45,
     'z': 55,
 };
+
+function box_cipher(message) {
+    let messageArr = message.split('').filter(el => el !== ' ' ).map(el => wiredPairs[el]);
+
+    let encodedArr = messageArr.join('');
+
+    return encodedArr;
+}
+
+console.log(box_cipher('message'));
