@@ -1,5 +1,5 @@
 html {
-    background: dimgray;
+    background: #3c6382;
 }
 
 body {
@@ -14,5 +14,20 @@ h1 {
     border-bottom: 1px solid black;
     width: 50%;
 }
+
+img {
+    transition: transform .2s;
+}
+
+img:hover {
+    transform: scale(1.10);
+}
+
+.div1 {
+    border-bottom: 1px solid black;
+    gap: 50px;
+    width: 50%;
+}
+
 
 
