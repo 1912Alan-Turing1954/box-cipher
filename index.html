@@ -6,13 +6,18 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="main.css">
+        
     </head>
     <body>
-        <h1>box-cipher</h1>
-            <input id="inputtext" name="inputtext"></input></br>
-		    <input id= "outputtext" name="decodedtext"></input>
-            <button type="button" id="btn" onclick="box_cipher();">Encrypt</button>
+        <CENTER class="size">
+            <h1>box-cipher</h1>
+            <input id="inputtext" name="inputtext" style="width: 250px;"></input><br>
+            <button type="button" id="btn" onclick="box_cipher();">Encrypt</button><br>
+	        <input id= "outputtext" name="decodedtext" style="width: 250px;"></input>
+            <p>You can you the box below to help decrypt the text, enjoy.</p>
+            <img src="img/box_cipher-guide.png" alt="box-cipher" style="width: 500px; ;height:500px;">
+        </CENTER>
         <script type="text/javascript" src="box-cipher.js" async defer></script>
     </body>
 </html>

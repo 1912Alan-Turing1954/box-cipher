@@ -1,0 +1,13 @@
+html {
+    background: dimgray;
+}
+
+body {
+    font-size: x-large;
+}
+
+#btn, #inputtext, #outputtext {
+    outline: none;
+}
+
+
