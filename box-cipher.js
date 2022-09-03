@@ -27,12 +27,14 @@ const wiredPairs = {
     'z': 55,
 };
 
-function box_cipher(message) {
-    let messageArr = message.split('').filter(el => el !== ' ' ).map(el => wiredPairs[el]);
+function box_cipher() {
+    let messageArr = document.getElementById('inputtext').value;
+    
+    let encodedArr = messageArr.split('').filter(el => el !== ' ' ).map(el => wiredPairs[el]);
 
-    let encodedArr = messageArr.join('');
+    let  codedArr = encodedArr.join('');
 
-    return encodedArr;
+    document.getElementById('outputtext').value = codedArr;
 }
 
-console.log(box_cipher('message'));
+// console.log(box_cipher());
