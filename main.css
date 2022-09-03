@@ -13,6 +13,7 @@ body {
 h1 {
     border-bottom: 1px solid black;
     width: 50%;
+    text-shadow: 8px 1px 0 rgba(0,0,0,.25);
 }
 
 img {
@@ -27,6 +28,10 @@ img:hover {
     border-bottom: 1px solid black;
     gap: 50px;
     width: 50%;
+}
+
+p {
+    text-shadow: 2px 2px 0 rgba(0,0,0,.25);
 }
 
 
