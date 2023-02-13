@@ -1,23 +1,63 @@
 html {
-    background: #3c6382;
+    background-color:#005b77;
+    color: black;
+}
+
+.dark-mode {
+    background-color: #3a3a3a;
+    color: white;
 }
 
 body {
     font-size: x-large;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-#btn, #inputtext, #outputtext {
+#btn, #inputtext, #outputtext, #copy {
     outline: none;
+    border: none;
+    padding: 1em;
+    margin: 1em;
+}
+
+#btn, #copy {
+    grid-template-columns: 2fr;
+}
+
+#copy {
+    padding: 0.5em 0.8em;
+    border-radius: 1.2em;
+}
+
+#copy:active {
+    background-color: white;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+}
+
+#inputtext, #outputtext {
+    font-size: 0.8em;
+}
+
+#btn {
+    padding: 1em 2em;
+    border-radius: 1.2em;
+}
+
+#btn:active {
+    background-color: white;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
 }
 
 h1 {
     border-bottom: 1px solid black;
     width: 50%;
-    text-shadow: 5px 1px 0 rgba(0,0,0,.25);
+    text-shadow: 5px 5px 5px rgba(0,0,0,.25);
 }
 
 img {
-    filter: drop-shadow(15px 5px 4px black);
+    filter: drop-shadow(15px 5px 10px black);
     transition: transform .2s;
 }
 
@@ -32,7 +72,8 @@ img:hover {
 }
 
 p {
-    text-shadow: 2px 2px 0 rgba(0,0,0,.25);
+    text-shadow: 2px 2px 5px rgba(0,0,0,.25);
+    padding: 1em;
 }
 
 
