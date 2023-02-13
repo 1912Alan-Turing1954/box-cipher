@@ -1,14 +1,26 @@
 html {
-    background-color:#005b77;
+    background:#005b77;
     color: black;
 }
 
 .dark-mode {
-    background-color: #3a3a3a;
+    background: #3a3a3a;
     color: white;
 }
 
+.toggle ion-icon {
+    padding: 0.5em;
+    transform: scale(1.5);
+}
+
+.toggle {
+    margin: 1em;
+    border-radius: 1.2em;
+}
+
 body {
+    padding: 0;
+    margin: 0;
     font-size: x-large;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
